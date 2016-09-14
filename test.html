@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script type="text/javascript" src="timeline_plugin.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="timeline" style='width:100%; height:600px;'></div>
+  </body>
+  
+  <script>
+    var today = new Date();
+    var data = [
+      {date:d3.timeDay.offset(today, -7), label:'last week'},
+      {date:d3.timeMinute.offset(today,-20), label:'20 minutes ago'},
+      {date:d3.timeDay.offset(today, -1), label:'yesterday'},
+      {date:today, label:'today'},
+    ];
+    var tl = timeline();
+    d3.select('#timeline').datum(data).call(tl)
+  </script>
+</html>
+
+

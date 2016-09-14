@@ -1,0 +1,29 @@
+body{
+  background-color: #edebff
+}
+
+#frame{
+  padding:10px;
+  background-color: white
+    
+}
+#timeline{
+  background-color: white;
+  border-bottom-style: solid;
+  border-bottom-color: gainsboro;
+    
+}
+
+#timeline polyline {
+  shape-rendering: crispEdges;
+}
+
+#timeline div {
+  display: block;
+  height:70%;
+  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-top: -13px;
+}
+
